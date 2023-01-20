@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "js_out"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build && npm run test"
+  },
+  "exclude": [
+    "node_modules", "index.test.ts"
+  ],
+}
