@@ -1,6 +1,6 @@
 {
   "name": "handle-api-error",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "js_out/",
   "devDependencies": {
     "@types/jest": "^29.2.6",
