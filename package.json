@@ -1,11 +1,16 @@
 {
   "name": "handle-api-error",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "js_out/index.js",
   "types": "js_out/index.d.ts",
   "devDependencies": {
     "@types/jest": "^29.2.6",
     "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build && npm run test"
   },
   "dependencies": {
     "@types/http-errors": "^2.0.1",

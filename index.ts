@@ -15,7 +15,7 @@ function handleError(
     error: any,
     event: string,
     status: number = 400,
-    expose: boolean = false
+    expose: boolean = true
 ): HttpError {
     let _msg = `Error occurred while ${event}`;
     return createError(status, {originalError:error, msg: _msg, expose : expose});
