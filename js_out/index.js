@@ -11,7 +11,7 @@ var createError = require("http-errors");
  * @return HttpError the inputted error parsed into a HttpError
  */
 function handleError(error, event, status, expose) {
-    if (status === void 0) { status = 400; }
+    if (status === void 0) { status = 500; }
     if (expose === void 0) { expose = true; }
     var _msg = "Error occurred while ".concat(event);
     return createError(status, { originalError: error, msg: _msg, expose: expose });
