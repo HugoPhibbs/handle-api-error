@@ -13,4 +13,10 @@ describe("Test creating errors", () => {
         expect(newError.status).toBe(500);
         expect(newError.msg).toBe("Error occurred while Running another test");
     });
+
+    test("Test default status code", () => {
+        const error = new Error("Another random error");
+        const newError = handleError(error, "Running another test", undefined, true);
+        expect(newError.status).toBe(500);
+    })
 });

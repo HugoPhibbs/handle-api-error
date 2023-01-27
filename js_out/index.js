@@ -12,7 +12,7 @@ var createError = require("http-errors");
  */
 function handleError(error, event, status, expose) {
     if (status === void 0) { status = 400; }
-    if (expose === void 0) { expose = false; }
+    if (expose === void 0) { expose = true; }
     var _msg = "Error occurred while ".concat(event);
     return createError(status, { originalError: error, msg: _msg, expose: expose });
 }

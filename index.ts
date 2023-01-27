@@ -14,7 +14,7 @@ const createError = require("http-errors");
 function handleError(
     error: any,
     event: string,
-    status: number = 400,
+    status: number = 500,
     expose: boolean = true
 ): HttpError {
     let _msg = `Error occurred while ${event}`;
