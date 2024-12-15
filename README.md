@@ -2,7 +2,6 @@
 - Micro package for handling api errors. Provides simple function to help with debugging errors within APIs
 
 ## Installation
-```bash
 ```shell
 npm install handle-api-error
 ```
